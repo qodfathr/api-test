@@ -23,6 +23,8 @@ export const register = ( app: express.Application, keycloak: Keycloak ) => {
         res.send("clearHandler!");
     } );
     app.get("/secure", keycloak.protect(), async (req, res) => {
+        // tslint:disable-next-line:no-console
+        console.log("secure");
         res.send("secureHandler!");
     });
     app.get("/roleneeded", keycloak.protect("magicrole"), async (req, res) => {
