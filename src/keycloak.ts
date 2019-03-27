@@ -1,4 +1,4 @@
-import Keycloak from "keycloak-connect";
+import Keycloak from 'keycloak-connect';
 
 export class KeycloakFactory {
     /**
@@ -9,7 +9,7 @@ export class KeycloakFactory {
      */
     public static getInstance(): Keycloak {
         if (!KeycloakFactory.instance) {
-            KeycloakFactory.instance = new Keycloak( { scope: "openid" });
+            KeycloakFactory.instance = new Keycloak( { scope: 'openid' });
         }
 
         return KeycloakFactory.instance;
