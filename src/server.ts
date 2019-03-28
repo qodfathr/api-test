@@ -20,7 +20,7 @@ const corsOptions = {
 
 /*
 let corsOptionsDelegate = function(req: any, callback: any) {
-    callback(null, { origin: true });
+    callback(null, { origin: true }); 
 };
 */
 app.use(cors(corsOptions));
