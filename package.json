@@ -60,6 +60,7 @@
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
-    "keycloak-connect": "^4.8.3"
+    "keycloak-connect": "^4.8.3",
+    "yorkie": "^2.0.0"
   }
 }
