@@ -12,24 +12,46 @@ export const register = ( app: express.Application, keycloak: Keycloak ) => {
             { data: {
                 organizations: [
                     {
-                        name: 'org1',
+                        name: 'facebook',
+                        imageurl: 'https://avatars2.githubusercontent.com/u/69631?s=200&v=4',
                         repositories: [
                             {
-                                name: 'repo1',
-                                url: 'https://github.com/org1/repo1',
+                                name: 'react',
+                                url: 'https://github.com/facebook/react',
                             },
                             {
-                                name: 'repo2',
-                                url: 'https://github.com/org1/repo2',
+                                name: 'react-native',
+                                url: 'https://github.com/facebook/react-native',
                             },
                         ],
                     },
                     {
-                        name: 'org2',
+                        name: 'vuejs',
+                        imageurl: 'https://avatars3.githubusercontent.com/u/6128107?s=200&v=4',
                         repositories: [
                             {
-                                name: 'repo3',
-                                url: 'https://github.com/org1/repo3',
+                                name: 'vue',
+                                url: 'https://github.com/vuejs/vue',
+                            },
+                        ],
+                    },
+                    {
+                        name: 'nodejs',
+                        imageurl: 'https://avatars3.githubusercontent.com/u/9950313?s=200&v=4',
+                        repositories: [
+                            {
+                                name: 'node',
+                                url: 'https://github.com/nodejs/node',
+                            },
+                        ],
+                    },
+                    {
+                        name: 'jquery',
+                        imageurl: 'https://avatars0.githubusercontent.com/u/70142?s=200&v=4',
+                        repositories: [
+                            {
+                                name: 'jquery',
+                                url: 'https://github.com/jquery/jquery',
                             },
                         ],
                     },
